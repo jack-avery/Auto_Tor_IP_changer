@@ -1,11 +1,13 @@
 # Auto_Tor_IP_changer V 2.1
-autoTOR is a script that changes your IP periodically using the TOR network.
+autoTOR is a script that changes your IP periodically using the Tor network.
+
+Currently this script only supports having Tor occupy port `9050`.
 
 ## Installation
 1. Get the source code: `git clone https://github.com/FDX100/Auto_Tor_IP_changer`
 2. CD into the new directory: `cd Auto_Tor_IP_changer`
 3. Run the installer: `python3 install.py`
-4. Set your socket proxy to `127.0.0.1:9050` (or whichever port you've configured Tor to use)
+4. Set your socket proxy to `127.0.0.1:9050`
 
 autoTOR will install itself in `/usr/share/aut`, and allow you to run autoTOR at any time with the `aut` command.<br/>
 The script will prompt you for the refresh interval length and refresh count. Set `0` as the refresh count to refresh forever.
