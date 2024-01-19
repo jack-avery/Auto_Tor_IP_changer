@@ -1,32 +1,22 @@
 # Auto_Tor_IP_changer V 2.1
-change your Ip Address automatically  This tool based on tor project
+autoTOR is a script that changes your IP periodically using the TOR network.
 
+## Installation
+1. Get the source code: `git clone https://github.com/FDX100/Auto_Tor_IP_changer`
+2. CD into the new directory: `cd Auto_Tor_IP_changer`
+3. Run the installer: `python3 install.py`
+4. Set your socket proxy to `127.0.0.1:9050` (or whichever port you've configured Tor to use)
 
-how to install this tools :
+autoTOR will install itself in `/usr/share/aut`, and allow you to run autoTOR at any time with the `aut` command.<br/>
+The script will prompt you for the refresh interval length and refresh count. Set `0` as the refresh count to refresh forever.
 
-* : requirements:
-
-  sudo apt-get install tor
-  pip3 install requests[socks]
-  or just run autoTor it will install everything
-
-1: git clone https://github.com/FDX100/Auto_Tor_IP_changer.git
-
-2 : cd Auto_Tor_IP_changer
-
-3 : python3 install.py
-
-4 : interminal type ( aut ) any where you want
-  
-5 : type time to change IP
-
-6: type how many time to change your ip 
-
-*[0 to infinte IP change]
-
-6 : go to your browser / pc  change sock proxy to 127.0.0.1:9050
-
-7 : BOOOOOOMM 
+autoTOR should prompt you to install any missing dependencies from the apt repositories.
+In the case that it fails to do so, you will need:
+* `tor` [(Debian install instructions)](https://support.torproject.org/apt/tor-deb-repo/)
+* `python3`
+* `requests[socks]`
+> This command should work: `sudo apt-get update && sudo apt-get install tor python3 python3-pip && pip3 install requests[socks]`<br/>
+> Do note that Tor [does not recommend using Ubuntu repositories to install Tor](https://support.torproject.org/apt/#apt_tor-ubuntu).
 
 ============
 http://facebook.com/ninja.hackerz.kurdish/
